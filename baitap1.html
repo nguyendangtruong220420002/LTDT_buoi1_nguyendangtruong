@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        // Du lieu 1
+        // Du lieu cua Mark
+        var markWeight = 78;
+        var markHeight = 1.69;
+        // Du lieu cua john
+        var johnWeight = 92;
+        var johnHeight = 1.92;
+
+        var markBMI = markWeight / (markHeight * markHeight);
+        var johnBMI = johnWeight / (johnHeight * johnHeight);
+        // Kiểm tra du lieu
+        var markHigherBMI = markBMI > johnBMI;
+
+        console.log("Du lieu:");
+        console.log("Chieu Cao mark:" + markWeight, "Can nang cua mark" + markHeight);
+        console.log("Chieu Cao john:" + johnWeight, "Can nang cua john" + johnHeight);
+        console.log("BMI cua Mark  " + markBMI);
+        console.log("BMI cua John " + johnBMI);
+        console.log("Mark co chi so BMI cao hon John khong? " + markHigherBMI);
+
+        // Du lieu 2
+        function BMI(weight, height) {
+            return weight / height ** 2;
+        };
+        // Du lieu cua Mark2
+        var markWeight = 78;
+        var markHeight = 1.69;
+        // Du lieu cua john2
+        var johnWeight = 92;
+        var johnHeight = 1.92;
+        // BMI
+        var markBMI = BMI(markHeight, markHeight);
+        var johnBMI = BMI(johnHeight, johnHeight);
+
+        var markHigherBMI = markBMI > johnBMI;
+
+        console.log("Du lieu:2");
+        console.log("Chieu Cao mark:" + markWeight, "Can nang cua mark: " + markHeight);
+        console.log("Chieu Cao john:" + johnWeight, "Can nang cua john" + johnHeight);
+        console.log("BMI cua Mark  " + markBMI);
+        console.log("BMI cua John " + johnBMI);
+        console.log("Mark co chi so BMI cao hon John khong? " + markHigherBMI);
+    </Script>
+
+
+</body>
+
+</html>
